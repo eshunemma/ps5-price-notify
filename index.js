@@ -23,4 +23,4 @@ app.listen(port, () => {
 //   console.log("Daily cron job is running!");
 // });
 
-compile()
+compile();
