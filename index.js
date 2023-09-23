@@ -18,7 +18,9 @@ app.listen(port, () => {
 });
 
 // Schedule a job to run every day at a specific time (e.g., 8:00 am)
-cron.schedule("0 8 * * *", () => {
-  compile();
-  console.log("Daily cron job is running!");
-});
+// cron.schedule("0 8 * * *", () => {
+//   compile();
+//   console.log("Daily cron job is running!");
+// });
+
+compile()
