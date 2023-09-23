@@ -8,7 +8,7 @@ const app = express();
 
 // Define a route
 app.get("/", (req, res) => {
-compile();
+  compile();
   res.send("Hello, Express!");
 });
 
