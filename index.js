@@ -11,6 +11,11 @@ app.get("/", (req, res) => {
   res.send("Hello, Express!");
 });
 
+app.get("/me", (req, res) => {
+  compile();
+  res.send("Notification Sent");
+});
+
 // Start the server
 const port = process.env.PORT || 3000; // Use the specified port or default to 3000
 app.listen(port, () => {
@@ -19,6 +24,6 @@ app.listen(port, () => {
 
 // Schedule a job to run every day at a specific time (e.g., 8:00 am)
 cron.schedule("2 * * * *", () => {
-  compile();
+  // compile();
   console.log("Daily cron job is running!");
 });
