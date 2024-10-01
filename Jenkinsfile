@@ -13,11 +13,5 @@ pipeline {
       }
     }
 
-    stage('install packages') {
-      steps {
-        sh 'npm install && npm start'
-      }
-    }
-
   }
 }
